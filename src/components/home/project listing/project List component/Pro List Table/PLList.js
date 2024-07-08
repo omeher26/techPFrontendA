@@ -8,7 +8,7 @@ import { allProjects, sortByEndD, sortByLstMod, sortByPrio, sortByStartD, sortBy
 const PLList = () => {
   const [searchD,setSearchD] = useState('');
   const [currP, setCurrP] = useState(1);
-  const postPpage = 3;
+  const postPpage = 4;
 
 
   const dispatch = useDispatch();
