@@ -3,9 +3,9 @@ import "./plmcards.css";
 import { MdOutlineSearch } from "react-icons/md";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { Button, Offcanvas, Stack } from "react-bootstrap";
-import MSort from "./MSort";
+// import MSort from "./MSort";
 import { useDispatch, useSelector } from "react-redux";
-import { allDataProject, allProjects, sortByLstMod, sortByPrio, sortByStartD, sortByStatus, updProStatus } from "../../../../../redux/slice/ProjectSlice";
+import {  allProjects, sortByLstMod, sortByPrio, sortByStartD, sortByStatus, updProStatus } from "../../../../../redux/slice/ProjectSlice";
 
 const PLMCards = () => {
   const [show, setShow] = useState(false);
@@ -15,7 +15,7 @@ const PLMCards = () => {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(allProjects())
-  },[]);
+  },[dispatch]);
 
   const {data,isLoading, isError} = useSelector((val)=> val.proData);
   if(isLoading){

@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PLimg from './project List component/pl head/PLimg'
 import PLList from './project List component/Pro List Table/PLList'
 import './projectListMain.css';
 import PLMCards from './project List component/Pro List Mobile/PLMCards';
 import WidthScreen from '../WidScr';
-import MSort from './project List component/Pro List Mobile/MSort';
-import { Offcanvas, Stack } from 'react-bootstrap';
+// import MSort from './project List component/Pro List Mobile/MSort';
+// import { Offcanvas, Stack } from 'react-bootstrap';
 
 const ProjectListingMain = () => {
   const width = WidthScreen();

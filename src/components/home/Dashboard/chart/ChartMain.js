@@ -12,7 +12,7 @@ const ChartMain = () => {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(allProjects());
-  },[]);
+  },[dispatch]);
 
   const {data} = useSelector((val)=>val.proData);
 

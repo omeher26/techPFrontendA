@@ -14,7 +14,7 @@ const PLList = () => {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(allProjects());
-  },[]);
+  },[dispatch]);
 
   const {data,isLoading, isError} = useSelector((val)=>val.proData);
   if(isLoading){
