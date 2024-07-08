@@ -30,7 +30,7 @@ const CardUI = () => {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(allProjects())
-  },[]);
+  },[dispatch]);
 
   const {data} = useSelector((val)=>val.proData);
 
