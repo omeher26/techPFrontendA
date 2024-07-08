@@ -1,0 +1,64 @@
+.CPH1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CPM {
+    background-image: url('./loginbg1.png');
+    height: 25vh; 
+    width: 100%;
+    border: 1px solid black;
+    background-size: cover; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position:relative;
+    border-bottom-left-radius: 130px; 
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.CPName{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 700;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.imgCPH{
+    text-align: center;
+}
+
+.logoutCP{
+    opacity: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .imgCPH{
+        display: none;
+    }
+    .CPM{
+        height: 15vh;
+    }
+    .logoutCP{
+        opacity: 1;
+    }
+}
+
+@media (max-width:600) {
+    .CPM{
+        border-bottom-left-radius: 10px; 
+    }
+}
+
+
+

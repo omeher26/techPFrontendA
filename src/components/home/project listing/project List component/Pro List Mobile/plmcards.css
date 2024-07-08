@@ -1,0 +1,113 @@
+
+
+.PLMCardsMain1{
+    margin-inline: 2vw;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 9vw;
+}
+/* .PLMCardsMain2{
+    height: 80%;
+    width: auto;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding: 10px;
+} */
+ .PLMCardsMain2{
+    margin-bottom: 80px;
+ }
+
+
+.PLMCardsSerSor{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 15px;
+    margin-bottom: 20px;
+}
+
+
+.PLMCardsSer{
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+ .PLMCardsSer input{
+    border: none;
+    background: none;
+    outline: none;
+    width: 40vw;
+ }
+
+.PLMCardsSer input::placeholder {
+    color: #999;  
+    padding-left: 5px;
+}
+
+.PLMCardsSort{
+    font-size: 40px;
+}
+
+.PLMCardsStylMain{
+    height: 40%;
+    width: 95%;
+    margin-inline: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.PLMCardStyM11{
+    padding: 10px;
+}
+
+.PLMCdfM1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.PLMCdf{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.PLMCdfUlm{
+    display: flex;
+    margin-bottom: -18px;
+}
+
+.PLMCdfUl1{
+    display: flex;
+    list-style: disc;
+}
+.PLMCdfUl2{
+    /* display: flex;
+    align-items: center; */
+    list-style-type: disc;
+}
+
+.PLMCdfBtn1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.PLMCbtnM{
+    border-radius: 25px; 
+    width: 150px; 
+    height: 50px; 
+    font-size: 16px; 
+    padding: 10px; 
+}
+
+.ofCanPLMP{
+    height: 50vh;
+  }
+  @media (min-width:700px) {
+      .ofCanPLMP{
+          display: none;
+      }
+  }

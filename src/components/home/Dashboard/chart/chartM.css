@@ -1,0 +1,90 @@
+.chartCom {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  /* margin-bottom: 10vh; */
+}
+
+.chartWrapper {
+  width: 60%;
+  background-color: white;
+  box-shadow: 10px 12px 20px rgba(42, 92, 194, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.chartLegend {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+}
+
+.chartLegend .blci {
+  display: flex;
+  align-items: center;
+  color: #025aab;
+}
+
+.chartLegend .blci .blueCir {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #025aab;
+  margin: 5px;
+}
+
+.chartLegend .grci {
+  display: flex;
+  align-items: center;
+  color: green;
+}
+
+.chartLegend .grci .greenCir {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: green;
+  margin: 5px;
+}
+
+@media (max-width: 1300px) and (min-width:900px) {
+  .chartWrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .chartWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:500px) and (min-width: 0) {
+  .chartWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: -10px;
+  }
+  .chartCom{
+    margin-bottom: 10vh;
+  }
+}
+
+

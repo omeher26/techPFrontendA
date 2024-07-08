@@ -1,0 +1,53 @@
+.dashM1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashM {
+    background-image: url('./loginbg1.png');
+    height: 25vh; 
+    width: 100%;
+    border: 1px solid black;
+    background-size: cover; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position:relative;
+    border-bottom-left-radius: 130px; 
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.imgPDash{
+    text-align: center;
+}
+
+.logoutD{
+    opacity: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .imgPDash{
+        display: none;
+    }
+    .logoutD{
+        opacity: 1;
+        color: aliceblue;
+    }
+    .dashM{
+        height: 20vh;
+    }
+}
+
+@media (max-width:600) {
+    .dashM{
+        border-bottom-left-radius: 20px; 
+    }
+}

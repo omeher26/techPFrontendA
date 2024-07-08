@@ -1,0 +1,64 @@
+.plM1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plM {
+    background-image: url('./loginbg1.png');
+    height: 25vh; 
+    width: 100%;
+    border: 1px solid black;
+    background-size: cover; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position:relative;
+    border-bottom-left-radius: 130px; 
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.plName{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 700;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.imgPpl{
+    text-align: center;
+}
+
+.logoutpl{
+    opacity: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .imgPpl{
+        display: none;
+    }
+    .plM{
+        height: 15vh;
+    }
+    .logoutpl{
+        opacity: 1;
+    }
+}
+
+@media (max-width:600) {
+    .plM{
+        border-bottom-left-radius: 10px; 
+    }
+}
+
+
+

@@ -1,0 +1,60 @@
+
+.pllistMain1{
+    margin-inline: 2vw;
+}
+.pllistMain2{
+    height: 80%;
+    width: auto;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding: 10px;
+}
+
+
+.pllistSerSor{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.pllistSort select{
+    border: none;
+    background : none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.pllistSer{
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+ .pllistSer input{
+    border: none;
+    background: none;
+    outline: none;
+ }
+
+.pllistSer input::placeholder {
+    color: #999;  
+}
+
+
+.pllistTableM th{
+    background-color: #ebf5ff;
+}
+
+.pllistTableM td, 
+.pllistTableM th {
+    padding: 4px 8px; 
+    vertical-align: middle; 
+}
+
+.pllistTableM button{
+    border-radius: 20px;
+}
+

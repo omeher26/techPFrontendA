@@ -1,0 +1,40 @@
+
+/* .ofCanPLMP{
+  height: 50vh;
+}
+@media (min-width:700px) {
+    .ofCanPLMP{
+        display: none;
+    }
+} */
+
+.projectListPLimg{
+    position: static;
+    z-index: 2;
+}
+
+.projectListPLList{
+    position: relative;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+@media (max-width:700px) {
+    .projectListPLList{
+        position: relative;
+        margin-top: 30px;
+    }
+}
+
+/* @media (max-width:950px) {
+    .projectListPLimg{
+        margin-bottom: 5vh;
+    }
+} */
+
+
+.PLMsortOpt{
+    position: relative;
+    z-index: 2;
+}
+
