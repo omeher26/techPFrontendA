@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Login from './components/login/Login'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -7,6 +7,8 @@ import NewNavbar from './components/home/NewNavbar/NewNavbar';
 import MainHome from './components/home/Main Project/MainHome';
 import CreateProMain from './components/home/create project/CreateProMain';
 import ProjectListingMain from './components/home/project listing/ProjectListingMain';
+import { useDispatch } from 'react-redux';
+import { allProjects } from './redux/slice/ProjectSlice';
 
 const App = () => {
   const location = useLocation();
@@ -15,6 +17,11 @@ const App = () => {
   const isCreatePro = location.pathname === '/createPro';
   const isProjectList = location.pathname === '/projectList';
 
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(allProjects())
+  },[dispatch]);
+  
   return (
     <div className="app-container">
 

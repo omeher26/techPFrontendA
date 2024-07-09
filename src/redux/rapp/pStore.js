@@ -6,3 +6,6 @@ export const Pstore = configureStore({
         proData : projectSlice.reducer,
     }
 })
+
+
+

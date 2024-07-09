@@ -25,37 +25,35 @@ const CPForm = () => {
 
         const startDate = new Date(pData.sDate);
         startDate.setHours(0, 0, 0, 0);
-        
+
         const endDate = new Date(pData.eDate);
         endDate.setHours(0, 0, 0, 0);
 
-        console.log("pData:", pData);
-        console.log("startDate:", startDate);
-        console.log("endDate:", endDate);
-        console.log("today:", today);
 
     const handleSubmit = (e)=>{
         e.preventDefault();
         setErr(true);
-        if(
-            (pData.pname.length>0) && 
-            (pData.reason.length>0) &&
-            (pData.typeB.length>0)  &&
-            (pData.division.length>0) &&
-            (pData.category.length>0) &&
-            (pData.priority.length>0) &&
-            (pData.department.length>0) &&
-            (pData.sDate.length > 0) &&
-            (pData.eDate.length > 0) &&
-            // (pData.sDate <= pData.eDate) &&
-            // (new Date(pData.sDate) >= new Date())
-            startDate <= endDate &&
-            startDate >= today
-        ){
-                console.log(pData);
-                dispatch(createPro(pData));
-                navigate('/projectList')
-        }
+            if(
+                (pData.pname.length>0) && 
+                (pData.reason.length>0) &&
+                (pData.typeB.length>0)  &&
+                (pData.division.length>0) &&
+                (pData.category.length>0) &&
+                (pData.priority.length>0) &&
+                (pData.department.length>0) &&
+                (pData.sDate.length > 0) &&
+                (pData.eDate.length > 0) &&
+                // (pData.sDate <= pData.eDate) &&
+                // (new Date(pData.sDate) >= new Date())
+                startDate <= endDate &&
+                startDate >= today
+            ){
+                    console.log(pData);
+                
+                    dispatch(createPro(pData));
+                    navigate('/projectList')
+            }
+       
     }
 
 

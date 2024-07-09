@@ -10,7 +10,8 @@ export const createPro = createAsyncThunk('createProject', async(projectD)=>{
         const response = await axios.post(`${apiLink}/createPro`, projectD)
         return response.data;
     }catch(err){
-        console.log(err);
+        // console.log(err.response.data.message);
+        alert(err.response.data.message)
     }
 })
 

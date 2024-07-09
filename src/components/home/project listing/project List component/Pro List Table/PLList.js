@@ -12,9 +12,9 @@ const PLList = () => {
 
 
   const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(allProjects());
-  },[dispatch]);
+  // useEffect(()=>{
+  //   dispatch(allProjects());
+  // },[dispatch]);
 
   const {data,isLoading, isError} = useSelector((val)=>val.proData);
   if(isLoading){
@@ -23,6 +23,7 @@ const PLList = () => {
   if(isError){
     return <h2 style={{textAlign:'center'}}>Error</h2>
   }
+
 
   // search
   const handleSearch = (e)=>{

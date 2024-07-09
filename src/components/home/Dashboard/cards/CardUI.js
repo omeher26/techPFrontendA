@@ -18,26 +18,28 @@
 
 
 
-import React, { useEffect } from "react";
+import React from "react";
 import "./cardUi.css";
-import { useDispatch, useSelector } from "react-redux";
-import { allProjects } from "../../../../redux/slice/ProjectSlice";
+import { useSelector } from "react-redux";
+// import { allProjects } from "../../../../redux/slice/ProjectSlice";
 import CountUp from "react-countup";
 // import data from "./tpD";
 
 
 const CardUI = () => {
-  const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(allProjects())
-  },[dispatch]);
+  // const dispatch = useDispatch();
+  // useEffect(()=>{
+  //   dispatch(allProjects())
+  // },[dispatch]);
 
   const {data} = useSelector((val)=>val.proData);
 
   const closed = data?.filter((val)=> val.status === 'Close').length;
   const start = data?.filter((val)=> val.status === 'Start').length;
-  const register = data?.filter((val)=> val.status === 'Register').length;
+  const register1 = data?.filter((val)=> val.status === 'Start');
+  const register = register1.filter((val)=> new Date(val.eDate) < new Date()).length;
   const cancel = data?.filter((val)=> val.status === 'Cancelled').length;
+
   const dataCard =[
     {name:'Total Project', val:data?.length},
     {name:'Closed', val:closed},

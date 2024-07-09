@@ -3,16 +3,16 @@ import './chartM.css'
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { BarChart, Bar, XAxis, YAxis, LabelList, ResponsiveContainer } from "recharts";
-import { allProjects } from '../../../../redux/slice/ProjectSlice';
+// import { allProjects } from '../../../../redux/slice/ProjectSlice';
 
 
 
 
 const ChartMain = () => {
-  const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(allProjects());
-  },[dispatch]);
+  // const dispatch = useDispatch();
+  // useEffect(()=>{
+  //   dispatch(allProjects());
+  // },[dispatch]);
 
   const {data} = useSelector((val)=>val.proData);
 
@@ -91,6 +91,7 @@ const ChartMain = () => {
             </Bar>
           </BarChart>
         </ResponsiveContainer>
+        
         <div className="chartLegend">
           <div className="blci">
             <div className="blueCir"></div>
