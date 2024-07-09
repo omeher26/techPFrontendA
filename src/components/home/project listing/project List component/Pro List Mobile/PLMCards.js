@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./plmcards.css";
 import { MdOutlineSearch } from "react-icons/md";
 import { BiMenuAltLeft } from "react-icons/bi";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "./pllist.css";
 import { MdOutlineSearch } from "react-icons/md";
 import { Button, Pagination, Stack, Table } from "react-bootstrap";
